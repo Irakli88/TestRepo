@@ -30,4 +30,10 @@ public class GreetingController {
 			@RequestParam(value = "agge", defaultValue = "0") int age) {
 		return new Person(firstname, lastname, age);
 	}
+	
+	@RequestMapping("/home")
+	public String getHome() {
+		return "Welcome Home!!!";
+	}
 }
+
